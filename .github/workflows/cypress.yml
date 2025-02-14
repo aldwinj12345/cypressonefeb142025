@@ -35,10 +35,10 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: cypress-screenshots
+          name: cypress-screenshots-${{ matrix.browser }} # Add browser name to the artifact name
           path: cypress/screenshots
       - name: Upload Cypress videos on success and failure
         uses: actions/upload-artifact@v4
         with:
-          name: cypress-videos
+          name: cypress-videos-${{ matrix.browser }} # Add browser name to the artifact name
           path: cypress/videos
