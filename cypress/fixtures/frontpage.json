@@ -1,0 +1,50 @@
+{
+    "testData" :{
+        "testURL" : "https://www.onlinejobs.ph/",
+        "userName" : "aldwinj12345@gmail.com",
+        "password" : "Walaybuot1"
+    },
+    "headTitle" : "Hire the best Filipino employees and virtual assistants the Philippines has to offer!",
+    "onlinejobsLogo" : "nav > a > img",
+    "howitworks" : {
+        "dropdown" : {
+            "cssSelector" : "a#navbarDropdown",
+            "textlabel" : "How it Works" 
+        },
+        "inputfield" : {
+            "cssSelector" : "#email"
+        }
+    },
+    "password" : {
+        "label" : {
+            "cssSelector" : "label[for='password']",
+            "textlabel" : "Password"
+        },
+        "inputfield" : {
+            "cssSelector" : "#password"
+        }
+    },
+    "remembermeCheckbox" : {
+        "label" : {
+            "cssSelector" : "label[for='remember_me']",
+            "textlabel" : "Remember me"
+        },
+        "checkbox" : {
+            "cssSelector" : "#rememberMe[type='checkbox']"
+        }
+    },
+    "forgotyourpassword" : {
+        "cssSelector" : "div > a[href='/forgot-password']",
+        "textlabel" : "Forgot your password?"
+    },
+    "signinbutton" : {
+        "cssSelector" : "button[type='submit']",
+        "buttonName" : "Sign in"
+    },
+    "errorpopup" : {
+        "authenticationerror" : ".ml-3 .font-inter",
+        "authenticationerrorTitle" : "Authentication Error",
+        "authenticationerrormessage" : ".ml-3 .font-sourceSansPro",
+        "errormessage" : "Incorrect email or password"
+    }
+}
