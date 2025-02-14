@@ -5,6 +5,17 @@ on: [push]
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false # Don't stop all jobs if one fails
+      matrix:
+        browser: [chrome, firefox, edge] # Browsers to test on
+        #group: [1, 2, 3] # Number of groups (adjust as needed)
+        
+    container:
+      image: cypress/included:latest # The pre-built Cypress Docker image
+
+    
     steps:
       - uses: actions/checkout@v3
       - name: Cache Node modules
